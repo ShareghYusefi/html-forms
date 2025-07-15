@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <!-- Forms: form, label, input, button -->
+    <form action="/process_form.php">
+      <!-- for & id attribute work together between the label and input elements  -->
+      <!-- type attribute speficies the type of input element to display -->
+      <label for="firstname">First Name: </label>
+      <input id="firstname" type="text" name="firstname" />
+      <br />
+      <br />
+      <label for="lastname">Last Name: </label>
+      <input id="lastname" type="text" name="lastname" />
+      <br />
+      <br />
+      <label for="age">Age: </label>
+      <input id="age" type="number" name="age" />
+      <br />
+      <br />
+      <!-- Radio buttons are used when we have known number of options -->
+      <!-- name attribute is used to group the radio buttons -->
+      <h4>What services are you interested in?</h4>
+      <input
+        type="radio"
+        name="service"
+        id="marketing"
+        value="marketing"
+      />Marketing <br />
+      <input
+        type="radio"
+        name="service"
+        id="development"
+        value="development"
+      />Development <br />
+      <input type="radio" name="service" id="design" value="design" />Design
+
+      <h4>What is your favorite color?</h4>
+      <!-- Select & option tags are used to create a dropdown list when we have a large number of items -->
+      <select name="favorite_color" id="favorite_color">
+        <option value="">None</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+      </select>
+      <br />
+      <br />
+
+      <!-- Two ways to create a form submit button -->
+      <!-- 1: submit button of type submit -->
+      <!-- <button type="submit">Submit</button> -->
+      <!-- 2: input field of type submit with valye of submit -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
